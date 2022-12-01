@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KanBan App</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+
+</head>
+
+<body>
+    <h2>Simple Kanban</h2>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <form method="POST">
+
+        <div id="app">
+            <div class="card card--accent">
+                <h2>{{email}}</h2>
+                <label class="input">
+                    
+                    <input class="input__field" type="text" title="email" name="email" v-model="email" placeholder="Username/Email" />
+                    <h1></h1>
+                    <input class="input__field" type="text" title="password" name="password" v-model="password" placeholder="Password" />
+                </label>
+              
+                <div class="button-group">
+                    <button type="submit" @click="check" >Submit</button>
+                </div>
+              </div>
+
+
+        </div>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
